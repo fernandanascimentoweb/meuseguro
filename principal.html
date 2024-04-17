@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguros S.A</title>
+    <script src="https://kit.fontawesome.com/21ee42898d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body onresize="mudoutamanho()">
+    <header>
+        <h1>SEGUROS S.A</S></h1>
+        <i id="burguer" class="fa-solid fa-bars" onclick="clickMenu()"></i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Modalidade</a></li>
+                <li><a href="#">Casa e lazer</a></li>
+                <li><a href="#">Cuidados</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <section class="flex">
+            <div>
+                <h1>O melhor seguro esta aqui !</h1>
+                <p>Compare e contrate seu seguro e seu credito, temos o plano que você precisa.</p>
+                <p><a href="#">SABER MAIS</a></p>
+            </div>
+            <div>
+                <img src="imagem/homen.webp">
+            </div>
+        </section>
+
+        <h1>NOSSAS EXPECIALIDADES</h1>
+
+        <section class="figuras">
+            <div>
+                <img src="imagem/carro-vermelho.webp">
+                <p>SEGURO DE AUTO</p>
+            </div>
+            <div>
+                <img src="imagem/moto-azul.avif">
+                <p>SEGURO DE AUTO</p>
+            </div>
+            <div>
+                <img src="imagem/saude001.jpg">
+                <p>SEGURO SAUDE</p>
+            </div>
+            <div>
+                <img src="imagem/coracao.jpg">
+                <p>SEGURO VIDA</p>
+            </div>
+            <div>
+                <img src="imagem/casa005.png">
+                <p>SEGURO RESIDENCIA</p>
+            </div>
+        </section>
+        
+        <article id="texto">
+            <h2><i class="fa-solid fa-paperclip"></i> SEGURO DE AUTO </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+        </article>
+        <article>
+            <h2> <i class="fa-solid fa-paperclip"></i> SEGURO SAUDE </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+        </article>
+        <article>
+            <h2><i class="fa-solid fa-paperclip"></i> SEGURO VIDA </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+        </article>
+        <article>
+            <h2><i class="fa-solid fa-paperclip"></i> SEGURO RESIDENCIA </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum veritatis, illo labore ea quod cum blanditiis pariatur ex. Excepturi minus eum quo rerum praesentium quaerat, maxime mollitia obcaecati quos earum.</p>
+        </article>
+    </main>
+    <script>
+        function mudoutamanho() {
+            if (window.innerWidth >= 768) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu() {
+            if (itens.style.display=='block'){
+                itens.style.display='none'
+            } else {
+                itens.style.display='block'
+            }
+        }
+    </script>
+
+    <section class="rodape">
+        <div>
+            <h4>Seguros</h4>
+            <p><i class="fa-solid fa-link"></i> seguro de auto</p>
+            <p><i class="fa-solid fa-link"></i> seguro Empresas</p>
+            <p><i class="fa-solid fa-link"></i> seguro acidente pessoais</p>
+            <p><i class="fa-solid fa-link"></i> Seguro viagem</p>
+            <p><i class="fa-solid fa-link"></i> seguro vida</p>
+        </div><hr>
+        <div>
+            <h4>Entre em contato</h4>
+            <p>Conheça os canais de comunicação</p>
+        </div><hr>
+        <div>
+            <h4>Atendemos em todo o Brasil</h4>
+            <p>Atendimento de 2º a 6º das 8h às 21h. Somente não atendemos em feriados nacionais.</p>
+            <p>Endereço: Av. das Avenidas Edifício 8989 - Broto, São Paulo - SP - CEP: 045555-900</p>
+        </div>
+        <div class="social">
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </section>
+    <footer>
+        <p>Todos os direitos Reservados - 2024 © Fernanda Nascimento web </p>
+    </footer>
+</body>
+</html>

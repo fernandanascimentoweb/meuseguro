@@ -1,0 +1,218 @@
+@charset "UTF-8";
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, html {
+    background-color: #DBC82A;
+
+}
+
+header >h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+}
+
+menu {
+    display: none;
+}
+
+menu>ul {
+    list-style-type: none;
+}
+
+menu>ul>li>a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: lightgray;
+    color: black;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+menu>ul>li>a:hover {
+    background-color: gray;
+    color: white;
+}
+
+main {
+    width: 90vw;
+    background-color: lightgray;
+    margin: auto;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+section img {
+    max-width: 100%;
+    display: block;
+    width: 700px;
+    height: 500px;
+}
+
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+}
+
+.flex > div {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.flex >div > h1 {
+    padding-top: 100px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.flex >div >p {
+    padding: 10px;
+    line-height: 2.5em;
+    text-align: center;
+
+}
+
+.flex >div >p > a {
+    line-height: 4.5em;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    background-color: gray;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px black;
+    padding: 20px;
+}
+
+.flex >div >p > a:hover {
+    background-color: #DBC82A;
+    color: black;
+}
+
+
+
+main h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.figuras {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    justify-content: space-evenly;
+
+    margin-top: 70px;
+}
+
+.figuras div {
+    flex: 1 1 200px;
+    margin: 10px;
+
+}
+
+.figuras div:hover {
+    transform: translateY(-16px) rotate(3deg);
+}
+
+.figuras div:hover~.div {
+    transform: translateX(160px);
+}
+
+.figuras div img {
+    max-width: 100%;
+    display: block;
+
+    width: 200px;
+    height: 200px;
+}
+
+
+.figuras div p {
+    text-align: center;
+    line-height: 2.5em;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+article#texto {
+    margin-top: 100px;
+}
+
+article>h2 {
+    margin-top: 50px;
+    padding-bottom: 20px;
+
+}
+
+article>p{
+    text-indent: 20px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+i#burguer {
+    background-color: gray;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.rodape {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+
+    margin-top: 50px;
+}
+
+.rodape div {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 10px;
+}
+.rodape div p {
+    font-size: 16px;
+    margin: 10px;
+}
+
+div.social {
+    text-align: center;
+}
+
+div.social i {
+    width: 40px;
+    height: 30px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+
+
+
+
